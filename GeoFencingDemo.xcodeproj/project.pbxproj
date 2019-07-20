@@ -13,6 +13,7 @@
 		A90B5CF422E0D85C000DC063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90B5CF322E0D85C000DC063 /* Assets.xcassets */; };
 		A90B5CF722E0D85C000DC063 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90B5CF522E0D85C000DC063 /* LaunchScreen.storyboard */; };
 		A90B5CFA22E0D85C000DC063 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A90B5CF922E0D85C000DC063 /* main.m */; };
+		A90B5D0222E0E1A6000DC063 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90B5D0122E0E1A6000DC063 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A90B5CF622E0D85C000DC063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A90B5CF822E0D85C000DC063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A90B5CF922E0D85C000DC063 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A90B5D0122E0E1A6000DC063 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A90B5D0222E0E1A6000DC063 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			children = (
 				A90B5CE922E0D85A000DC063 /* GeoFencingDemo */,
 				A90B5CE822E0D85A000DC063 /* Products */,
+				A90B5D0022E0E1A5000DC063 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +73,14 @@
 				A90B5CF922E0D85C000DC063 /* main.m */,
 			);
 			path = GeoFencingDemo;
+			sourceTree = "<group>";
+		};
+		A90B5D0022E0E1A5000DC063 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A90B5D0122E0E1A6000DC063 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +306,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.madhav.GeoFencingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -311,7 +323,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.madhav.GeoFencingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
